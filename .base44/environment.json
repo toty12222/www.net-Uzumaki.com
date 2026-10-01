@@ -1,0 +1,19 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "TMDB_API_KEY",
+      "description": "TMDB API key for fetching Netflix content categories. Get it from https://www.themoviedb.org/settings/api",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    },
+    {
+      "name": "TMDB_ACCESS_TOKEN",
+      "description": "TMDB read access token (Bearer). Get it from https://www.themoviedb.org/settings/api",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    }
+  ]
+}
